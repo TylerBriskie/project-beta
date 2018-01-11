@@ -8,29 +8,69 @@ body {
 }
 
 .banner-text {
-  text-decoration: none;
+  text-align: center;
+  font-size: 7em;
+  font-family: 'Monoton', cursive;
+  border: solid 3px;
+  border-radius: 25px;
+}
+
+.neon-blue {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
-  text-align: center;
-  font-size: 7em;
   color: #228DFF;
-  font-family: 'Monoton', cursive;
+
 }
 
 .banner-text:hover {
-  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
-  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
-  animation: neon2 1.5s ease-in-out infinite alternate;
+  -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon 1.5s ease-in-out infinite alternate;
+  animation: neon 1.5s ease-in-out infinite alternate;
   color: #ffffff;
 
 }
 
-@-webkit-keyframes neon2 {
+#header-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@-webkit-keyframes neon {
   from {
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
   }
   to {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+
+.header-button-a {
+  color: white;
+  background-color: #228fDD;
+}
+
+.header-button-a:hover {
+  animation-name: header-button;
+  animation-duration: 2s;
+}
+
+.header-button-b {
+  color: white;
+  background-color: #228fDD;
+}
+
+.header-button-b:hover {
+  animation-name: header-button;
+  animation-duration: 2s;
+}
+
+@keyframes header-button {
+  from {
+    background-color: #228fDD;
+  }
+  to {
+    background-color: #FF228F;
   }
 }

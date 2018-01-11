@@ -1,1 +1,5 @@
-console.log("hi tbone")
+(function() {
+  'use strict';
+  console.log('hi tbone');
+  
+}());
