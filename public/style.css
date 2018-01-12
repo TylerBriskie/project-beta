@@ -46,24 +46,23 @@ body {
   }
 }
 
-.header-button-a {
+.header-button {
   color: white;
-  background-color: #228fDD;
+  background-color: #226fFF;
+  width: 17em;
+  height: 6em;
 }
 
-.header-button-a:hover {
+.header-button:hover {
   animation-name: header-button;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
-.header-button-b {
-  color: white;
-  background-color: #228fDD;
-}
-
-.header-button-b:hover {
-  animation-name: header-button;
-  animation-duration: 2s;
+.dropdown-menu {
+  background-color: #22EBFF;
+  color: black;
+  width: 17em;
+  height: 20em;
 }
 
 @keyframes header-button {
@@ -71,6 +70,6 @@ body {
     background-color: #228fDD;
   }
   to {
-    background-color: #FF228F;
+    background-color: #22FF8F;
   }
 }
