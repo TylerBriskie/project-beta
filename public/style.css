@@ -31,10 +31,45 @@ body {
 
 }
 
-#header-buttons {
+#side-nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-button {
+  background-color: #000;
+  color: #228DFF;
+  border: #228DFF 1px solid;
+  border-radius: 25px;
+  width: 17em;
+  height: 3em;
+  margin-bottom: 2em;
+}
+
+.header-button:hover {
+  animation: header-button ease-in-out 1s forwards;
+}
+
+.header-button:
+
+.dropdown-menu {
+  background-color: #22EBFF;
+  color: black;
+  width: 17em;
+  height: 20em;
+  margin-left: 22em;
+}
+
+@keyframes header-button {
+  from {
+    background-color: #000;
+    color: #228fdd;
+  }
+  to {
+    background-color: #228fDD;
+    color: #000;
+  }
 }
 
 @-webkit-keyframes neon {
@@ -43,33 +78,5 @@ body {
   }
   to {
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
-  }
-}
-
-.header-button {
-  color: white;
-  background-color: #226fFF;
-  width: 17em;
-  height: 6em;
-}
-
-.header-button:hover {
-  animation-name: header-button;
-  animation-duration: 1s;
-}
-
-.dropdown-menu {
-  background-color: #22EBFF;
-  color: black;
-  width: 17em;
-  height: 20em;
-}
-
-@keyframes header-button {
-  from {
-    background-color: #228fDD;
-  }
-  to {
-    background-color: #22FF8F;
   }
 }
